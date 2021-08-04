@@ -17,7 +17,7 @@ const Header = ({ currentUser, hidden }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
       <Logo className='logo' />
-    </Link> 
+    </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
         SHOP
@@ -36,16 +36,13 @@ const Header = ({ currentUser, hidden }) => (
       )}
       <CartIcon />
     </div>
-    {
-      hidden ? null  :
-      <CartDropdown />
-    }
+    {hidden ? null : <CartDropdown />}
   </div>
 );
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
   hidden: selectCartHidden
-})
+});
 
 export default connect(mapStateToProps)(Header);
