@@ -1,6 +1,6 @@
-## Lesson-20
+## Lesson-22
 
-We want to be able to remove the item from the cart if the user doesn't want it anymore during checkout so we're going to add the appropriate action and case in our cart reducer.
+We don't want our users to lose their carts whenever they refresh, so we are going to leverage one of the benefits of redux by persisting our store object in localstorage using redux-persist.
 
 # How to fork and clone
 
